@@ -1,0 +1,30 @@
+{
+  "name": "namastey-react",
+  "version": "1.0.0",
+  "description": "learn about React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build":"parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anujkumar23/NAMASTEY-REACT.git"
+  },
+  "author": "Anuj kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anujkumar23/NAMASTEY-REACT/issues"
+  },
+  "homepage": "https://github.com/Anujkumar23/NAMASTEY-REACT#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "process": "^0.11.10"
+  },
+  "browserslist": "last 2 versions"
+}

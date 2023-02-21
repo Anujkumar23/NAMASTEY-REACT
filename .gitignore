@@ -1,0 +1,5 @@
+#Ignore node module folder
+node_modules/
+
+#Ignore  parcel cache folder
+.parcel-cache
