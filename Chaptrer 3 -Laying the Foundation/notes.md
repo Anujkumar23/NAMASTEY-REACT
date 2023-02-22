@@ -2,13 +2,13 @@
 JSX is a syntax  extension of javascript.JSX produce react element.JSX allow us t0 write HTML in JavaScript and place them in the DOM without the use of createElement  appendChild().
 
 ### Example 1 using JSX
-```
+
 ```javascript
 const myElement = <h1>I Love JSX!</h1>;
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(myElement);
 ```
-```
+
 ### Example 1 using JSX
 
 ```javascript
@@ -21,6 +21,7 @@ root.render(myElement);
 A: Using JSX, you can write markup inside Javascript, providing you with a superpower to write logic and markup of a component inside a single .jsx file. JSX is easy to maintain and debug.
 
 ## Example
+
 ```javascript
 function greeting(user) {
 //JSX
@@ -28,13 +29,16 @@ function greeting(user) {
 }
 ```
 
+
  ## Role of type attribute in script tag? What options can I use there?
  The type attribute specifies the type of the script. The type attribute identifies the content between the <script> and </script> tags. It has a Default value which is “text/javascript”.
 
 ### type attribute can be of the following types:
 * text/javascript : It is the basic standard of writing javascript code inside the <script> tag.
 ### Syntax
-<script type="text/javascript"></script>
+
+```<script type="text/javascript"></script>```
+
 *  **text/ecmascript** : this value indicates that the script is following the EcmaScript standards.
 *  **module**: This value tells the browser that the script is a module that can import or export other files or modules inside it.
 *  **text/babel**: This value indicates that the script is a babel type and required bable to transpile it.
