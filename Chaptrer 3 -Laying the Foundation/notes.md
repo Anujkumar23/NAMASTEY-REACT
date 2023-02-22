@@ -45,16 +45,20 @@ function greeting(user) {
  *  ```text/typescript```: As the name suggest the script is written in TypeScript.
 
 
-```{TitleComponent}``` vs ```{<TitleComponent/>}```  ```{<TitleComponent></TitleComponent>}``` in JSX.
-A: The Difference is stated below:
+### ```{TitleComponent}``` vs ```{<TitleComponent/>}```  ```{<TitleComponent></TitleComponent>}``` in JSX.
 
-```{TitleComponent}```: This value describes the TitleComponent as a javascript expression or a variable. The {} can embed a javascript expression or a variable inside it.
-```<TitleComponent/>``` : This value represents a Component that is basically returning Some JSX value. In simple terms TitleComponent a function that is returning a JSX value. A component is written inside the < /> expression.
-```<TitleComponent></TitleComponent>``` : ```<TitleComponent />``` and **]```<TitleComponent></TitleComponent>``` are equivalent only when ```< TitleComponent />``` has no child components. The opening and closing tags are created to include the child components.
+ The Difference is stated below:
+
+```{TitleComponent}```: This value describes the TitleComponent as a javascript expression or a variable. The {} can embed a javascript expression or a variable inside it.  
+
+```<TitleComponent/>``` : This value represents a Component that is basically returning Some JSX value. In simple terms TitleComponent a function that is returning a JSX value. A component is written inside the < /> expression.  
+
+```<TitleComponent></TitleComponent>``` :   
+```<TitleComponent />``` and ```<TitleComponent></TitleComponent>``` are equivalent only when ```< TitleComponent />``` has no child components. The opening and closing tags are created to include the child components.
 
 ### Example:
 
-```javascript
+```
 <TitleComponent>
     <FirstChildComponent />
     <SecondChildComponent />
