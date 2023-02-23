@@ -1,0 +1,124 @@
+*{
+    padding:0px;
+    margin:0px;
+  
+    
+   
+}
+.header{
+   
+    display:flex;
+    background-color: #1c1c1c; 
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    padding:0 20px 0 10px ;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+}
+.logo{
+   padding-left: 10px;;
+   width:100px;
+   height:100px;
+}
+.logo:hover{
+    transform:scale(0.9);
+   
+}
+.nav-items{
+    width: auto;
+    padding:0 10px 0;
+    color:#ffff
+}
+.nav-items >ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-items >ul>li{
+    padding:0 10px 0 0;
+    font-size: large;
+    cursor: pointer;
+}
+
+.nav-items >ul>li:hover{
+    color:blue
+
+}
+.restaurant-list{
+    
+    display: flex;
+    justify-content:center;
+    width: auto;
+    flex-wrap: wrap;
+   
+}
+.restaurant-card{
+    margin:20px;
+    width:200px;
+    padding:10px;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.restaurant-card:hover{
+    transform: scale(1.1);
+}
+.restaurant-card >img{
+    width: 100%;
+    border-radius: 5px;
+
+}
+.restaurant-card>h4{
+    max-width: 200px;
+}
+
+.restaurant-card > span{
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    margin-top: 10px;
+}
+.restaurant-card>span>h4{
+    font-size: medium;
+   
+}
+.restaurant-card>span>h4:first-child{
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 176, 1);
+    border-radius: 5px;
+    padding: 0 11px ;
+    color: white;
+}
+.restaurant-card>span>h4:first-child .fa-star {
+    padding: 0 5px 3px 0;
+    font-size: small;
+}
+
+
+
+
+.footer{
+    font-size: larger;
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: rgb(1, 163, 144);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+
+}
+.footer .link{
+    text-decoration: none;
+}
+.footer .logo-name{
+    color: rgba(211, 60, 60, 0.9);
+}
+.footer .logo-name >span{
+    color:#f9c064;
+}
+
+
+
