@@ -52,47 +52,49 @@ import "./App.css"
 // }
 
 //composition Of a Component(add component to another component)
-// const  AnotherComonent=()=>{
-//     return (
-//         <h1 style={{color:"paleturquoise"}} key='h4' >Hi,i am another Component</h1>
-//     )
-// }
+const  AnotherComonent=()=>{
+    return (
+        <h1 style={{color:"paleturquoise"}} key='h4' >Hi,i am another Component</h1>
+    )
+}
 
 
 // {TitleComponent} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX.
 
 
-// const TitleElementComponent=(
-//     <h1>I am a TitleElementComponent </h1>
-// )
-// const  TitleFunctionalComponent=()=>{
-//     return (
-//         <h1>I am a TitleFunctionalComponent</h1>
-//     )
-// }
-// const TitleComponentWithChildren=({children})=>{
-//     return (
-//         <>
-//          <h1>Hello I am a TitleFunctionalComponentWithChildren</h1>
-//         {children}
-//         </>
-//     )
+const TitleElementComponent=(
+    <h1>I am a TitleElementComponent </h1>
+)
+const  TitleFunctionalComponent=()=>{
+    return (
+        <h1>I am a TitleFunctionalComponent</h1>
+    )
+}
+const TitleComponentWithChildren=({children})=>{
+    return (
+        <>
+         <h1>Hello I am a TitleFunctionalComponentWithChildren</h1>
+        {children}
+        </>
+    )
        
-// }
+}
 
-// const Header=()=>{
-//     return(
-//         <>
-//         {TitleElementComponent}
-//         <TitleFunctionalComponent/>
-//         <TitleComponentWithChildren>
-//         <AnotherComonent/>
-//         </TitleComponentWithChildren>
-//         </>
+const Header=()=>{
+    return(
+       
+        <>
+         
+        {TitleElementComponent}
+        <TitleFunctionalComponent/>
+        <TitleComponentWithChildren>
+        {<AnotherComonent/>}
+        </TitleComponentWithChildren>
+        </>
         
 
-//     )
-// }
+    )
+}
 
 // const Title=()=>{
 //     return(
@@ -115,25 +117,25 @@ import "./App.css"
 //     return 
 // }
 
-const Header=()=>{
-    return (
-        <>
-        <header className="header">
-        <div className="left">
-            <img src={logo} width="20px" height="20px" alt="" />
-        </div>
-        <div className="center">
-            <input type="text" placeholder="search" />
-            <button>Search</button>
-        </div>
-        <div className="right">
-        <span class="material-symbols-outlined">account_circle</span>
-        </div>
-        </header>
+// const Header=()=>{
+//     return (
+//         <>
+//         <header className="header">
+//         <div className="left">
+//             <img src={logo} width="20px" height="20px" alt="" />
+//         </div>
+//         <div className="center">
+//             <input type="text" placeholder="search" />
+//             <button>Search</button>
+//         </div>
+//         <div className="right">
+//         <span class="material-symbols-outlined">account_circle</span>
+//         </div>
+//         </header>
         
-        </>
-    )
-}
+//         </>
+//     )
+// }
 
 
 
@@ -141,3 +143,4 @@ const Header=()=>{
 const root = ReactDOM.createRoot(document.getElementById("root"));
  
 root.render(<Header/>);
+
