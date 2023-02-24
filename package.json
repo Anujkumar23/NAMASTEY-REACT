@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build":"parcel build index.html",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +20,8 @@
   "homepage": "https://github.com/Anujkumar23/NAMASTEY-REACT#readme",
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.8.1"
   },
   "devDependencies": {
     "parcel": "^2.8.3",
