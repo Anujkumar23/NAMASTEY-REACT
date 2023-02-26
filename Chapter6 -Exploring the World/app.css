@@ -1,0 +1,277 @@
+*{
+    padding:0px;
+    margin:0px;
+  
+    
+   
+}
+.header{
+   
+    display:flex;
+    background-color: #1c1c1c; 
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    padding:0 20px 0 10px ;
+    color: #ffff;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+}
+.logo{
+   padding-left: 10px;;
+   width:100px;
+   height:100px;
+}
+.logo:hover{
+    transform:scale(0.9);
+   
+}
+.nav-items{
+    width: auto;
+    padding:0 10px 0;
+    color:#ffff
+}
+.nav-items >ul{
+    display: flex;
+    list-style-type: none;
+}
+.nav-items >ul>li{
+    padding:0 10px 0 0;
+    font-size: large;
+    cursor: pointer;
+}
+
+.nav-items >ul>li:hover{
+    color:blue
+
+}
+/* shimmer ui */
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+
+}
+.shimmer-card{
+    width: 220px;
+    padding:10px;
+    border-color: #d3d5df;
+    box-shadow: 0 4px 7px 0 rgb(218 220 230 / 60%);
+}
+
+.shimmer-card .shimmer-img{
+    width:200px;
+    height:130px;
+    margin-bottom: 10px;
+}
+.shimmer-tag{
+    width:50%;
+    margin-top: 10px;
+}
+.shimmer-title{
+    width: 60%;
+ margin-top: 10px;
+}
+.shimmer-details{
+width:80%;
+margin-top: 10px;
+}
+.stroke{
+    height:15px;
+    background-color: #777;
+}
+.animate{
+    animation: shimmer 5s;
+    animation-timing-function: infinite;
+    background: linear-gradient(to right,#e6e6e6 5%, #cccccc 25%, #e6e6e6 35%);
+    background-size: 1000px 100%;
+}
+@keyframes shimmer {
+    from {
+      background-position: -1000px 0;
+    }
+    to {
+      background-position: 1000px 0;
+    }
+  }
+
+
+
+.restaurant-list{
+    
+    display: flex;
+    justify-content:center;
+    width: auto;
+    flex-wrap: wrap;
+   
+}
+.search-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: 100%;
+
+}
+.search-container .search-input{
+    width: 40%;
+    box-sizing: border-box;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+  padding: 14px 15px 14px 20px;
+  border: 1px solid #aabcca;
+  border-right: 0;
+  color: #000000;
+  outline: none;
+}
+
+
+.search-container .search-button {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #0768b3;
+    box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+    color: #ffffff;
+    padding: 15px 22px;
+    margin-left: -4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+  .search-container .search-button:hover {
+    background-color: #016034;
+  }
+
+  .error-container{
+   text-align: center;
+   font-size: medium;
+   margin:20px 0;
+   font-weight: 500;
+  }
+
+.restaurant-card{
+    margin:20px;
+    width:220px;
+    padding:10px;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.restaurant-card:hover{
+    transform: scale(1.02);
+}
+.restaurant-card >img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.restaurant-card>h5{
+
+     color: #808080;
+    font-weight:lighter;
+   
+   
+}
+.restaurant-card>h3{
+    color: #202020;
+    font: large;
+}
+
+.restaurant-card > span{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+}
+.restaurant-card>span>h4{
+    font-size: 14px;
+    padding: 0 2px;
+    margin-top: 10px;
+    font-weight: bolder;
+
+
+   
+}
+.restaurant-card>span>h4:first-child{
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 176, 1);
+    border-radius: 5px;
+    padding:5px;
+    color: white;
+   
+
+}
+.restaurant-card>span>h4:first-child .fa-star {
+    padding: 0 5px 3px 0;
+    font-size: small;
+}
+
+
+
+
+.footer{
+    font-size: larger;
+    margin: 10px;
+    padding: 20px 10px;
+    background-color: rgb(1, 163, 144);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+
+}
+.footer .link{
+    text-decoration: none;
+}
+.footer .logo-name{
+    color: rgba(211, 60, 60, 0.9);
+}
+.footer .logo-name >span{
+    color:#f9c064;
+}
+
+
+
+
+@media only screen and (max-width: 350px){
+    .header{
+         height: 60px;
+        
+    }
+    .header .logo{
+        padding-left:10px;;
+        width:50px;
+        height:50px;
+     }
+     .nav-items >ul>li{
+        padding:0 5px 0 0;
+        font-size:x-small;
+        cursor: pointer;
+    }
+
+     
+}
+@media only screen and (max-width: 470px){
+    .header{
+         height: 70px;
+        
+    }
+    .header .logo{
+        padding-left:10px;;
+        width:60px;
+        height:60px;
+     }
+     .nav-items >ul>li{
+        padding:0 7px 0 0;
+        font-size:medium;
+        cursor: pointer;
+    }
+
+     
+}
+    
+
