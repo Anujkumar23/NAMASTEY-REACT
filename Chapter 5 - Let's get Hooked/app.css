@@ -92,6 +92,13 @@
     background-color: #016034;
   }
 
+  .error-container{
+   text-align: center;
+   font-size: medium;
+   margin:20px 0;
+   font-weight: 500;
+  }
+
 .restaurant-card{
     margin:20px;
     width:200px;
