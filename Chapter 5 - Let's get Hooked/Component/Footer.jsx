@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer">
           
     created by💘
-    <a className="link" href="https://www.linkedin.com/in/anuj-kumar-76509a20b/">Anuj Kumar</a> 
+    <a className="link" href="https://www.linkedin.com/in/anuj-kumar-76509a20b/" target='_blank'>Anuj Kumar</a> 
       <span className="copy"> © </span>
      2023 <strong className="logo-name"> Hot<span>Spot</span></strong>
 </footer>
