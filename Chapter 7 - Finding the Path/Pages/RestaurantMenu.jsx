@@ -9,7 +9,7 @@ import {
 } from "../constant"   ;
 
 function RestaurantMenu() {
-  const [restaurant, setRestaurant] = useState([]);
+  const [restaurant, setRestaurant] = useState(null);
   const { resId } = useParams();
   console.log(restaurant);
 
@@ -29,10 +29,7 @@ function RestaurantMenu() {
   }
 
  
-  return (
-    <>
-
-     {restaurant?.length===0 ? (<ShimmerMenu/>):(
+  return !restaurant ? (<ShimmerMenu/>):(
      <div className="restaurant-menu">
   <div className="restaurant-summary">
     <img
@@ -65,7 +62,7 @@ function RestaurantMenu() {
     </div>
   </div>
 
-  <div className="restaurant-menu-content">
+    <div className="restaurant-menu-content">
     <div className="menu-items-container">
       <div className="menu-title-wrap">
         <h2 className="menu-tilte">Recommended</h2>
@@ -99,13 +96,13 @@ function RestaurantMenu() {
 
    
       </div>
-    </div>
-  </div>
+    </div> 
+  </div> 
 </div>)
 
-}
-      </>
-  )
+
+      
+  
     
 } 
  
