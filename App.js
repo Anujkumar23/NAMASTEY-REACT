@@ -1,16 +1,39 @@
-//  const heading=document.createElement("h1");
-//  heading.textContent="hello javascript";
-  
-//  const root=document.getElementById("root");
-//  root.appendChild(heading);
-import React from "react"
-import  ReactDOM  from "react-dom/client"
+import  ReactDOM from "react-dom/client"
+
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom"
+import Layout from "./Chapter 7 - Finding the Path/Component/Layout"
+import About from "./Chapter 7 - Finding the Path/Pages/About"
+import Cart from "./Chapter 7 - Finding the Path/Pages/Cart"
+
+import Contact from "./Chapter 7 - Finding the Path/Pages/Contact"
+import Error from "./Chapter 7 - Finding the Path/Pages/Error"
+import Home from "./Chapter 7 - Finding the Path/Pages/Home"
+import Login from "./Chapter 7 - Finding the Path/Pages/Login"
+import RestaurantMenu from "./Chapter 7 - Finding the Path/Pages/RestaurantMenu"
 
 
-const element=React.createElement("h1",{id:"title"},"hello react")
-const element2=React.createElement("h2",{id:"title2"},"hello react+JS")
 
-const div=React.createElement("div",{id:"container"},element,element2)
-const root = ReactDOM.createRoot(document.getElementById("root"));
- 
-root.render(div);
+
+const router=createBrowserRouter(createRoutesFromElements(
+    <>
+    <Route path="/" element={<Layout/>} errorElement={<Error/>}>
+    <Route index element={<Home/>}/>
+    <Route path="/about" element={<About/>}/>
+    <Route path="/contact" element={<Contact/>}/>
+    <Route path="/cart" element={<Cart/>}/>
+    <Route path="/restaurant/:resId" element={<RestaurantMenu/>}/>
+    
+    </Route>
+    <Route path="/login" element={<Login/>}/>
+    </>
+    
+))
+
+const App = () => {
+  return (
+    <RouterProvider router={router}/>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<App/>)

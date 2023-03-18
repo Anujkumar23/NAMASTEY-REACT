@@ -25,8 +25,8 @@ function Contact() {
         <h1>Contact</h1>
         <form action="" onSubmit={handleSubmit}>
           <input type="text" placeholder='Full name' name='name' id="name" required />
-          <input type="email" placeholder='email' name='email' id='email' required />
-          <textarea name="textarea" id="textarea" cols="5" rows="5" required/>
+          <input type="email" placeholder=' Enter email' name='email' id='email' required />
+          <textarea name="textarea" id="textarea" cols="5" rows="5" placeholder='Enter message' required/>
           <button type='submit'>Submit</button>
         </form>
        { message && <h1>Thanks for contacting us</h1>}
